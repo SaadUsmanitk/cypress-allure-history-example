@@ -1,12 +1,4 @@
 context('Actions', () => {
-    before(() => {
-        const allure = Cypress.Allure.reporter.getInterface();
-
-        allure.writeEnvironmentInfo({
-            someEnvInfo: 'envInfo',
-            githubRepo: 'https://github.com/Shelex/cypress-allure-history-yae'
-        });
-    });
 
     beforeEach(() => {
         cy.visit('https://example.cypress.io/commands/actions');
