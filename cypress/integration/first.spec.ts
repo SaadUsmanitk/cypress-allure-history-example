@@ -3,6 +3,7 @@ context('Actions', () => {
         const allure = Cypress.Allure.reporter.getInterface();
         const today = new Date();
         const currentHour = today.getHours();
+        cy.wrap(currentHour).as('currentHour')
 
         allure.writeEnvironmentInfo({
             someEnvInfo: 'envInfo',
@@ -54,4 +55,13 @@ context('Actions', () => {
             .clear()
             .should('have.value', '');
     });
+
+    it('may fail', () => {
+        cy.get('@currentHour').then(hour => {
+           if ((hour as unknown as number) % 2 === 1) {
+                expect(true).to.be.eq(false)
+           }
+           expect(true).to.be.eq(true)
+        })
+    })
 });
