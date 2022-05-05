@@ -1,0 +1,14 @@
+{
+  "name": "cypress-allure-history-yae",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "npx cypress run --env allure=true"
+  },
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.26.5",
+    "cypress": "^9.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
