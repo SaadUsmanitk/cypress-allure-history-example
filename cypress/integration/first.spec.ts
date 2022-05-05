@@ -1,14 +1,10 @@
 context('Actions', () => {
     before(() => {
         const allure = Cypress.Allure.reporter.getInterface();
-        const today = new Date();
-        const currentHour = today.getHours();
-        cy.wrap(currentHour).as('currentHour')
 
         allure.writeEnvironmentInfo({
             someEnvInfo: 'envInfo',
-            githubRepo:
-                'https://github.com/Shelex/cypress-allure-history-yae'
+            githubRepo: 'https://github.com/Shelex/cypress-allure-history-yae'
         });
     });
 
@@ -20,6 +16,10 @@ context('Actions', () => {
         allure.tms('docs', 'https://on.cypress.io/interacting-with-elements');
         allure.label('tag', 'this is tag');
         allure.label('owner', 'Me, lol');
+
+        const today = new Date();
+        const currentHour = today.getHours();
+        cy.wrap(currentHour).as('currentHour')
     });
 
     afterEach(() => {
