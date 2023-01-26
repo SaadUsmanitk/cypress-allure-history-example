@@ -48,12 +48,5 @@ context('Actions', () => {
             .should('have.value', '');
     });
 
-    it('may fail', () => {
-        cy.get('@currentHour').then(hour => {
-           if ((hour as unknown as number) % 2 === 1) {
-                expect(true).to.be.eq(false)
-           }
-           expect(true).to.be.eq(true)
-        })
+    
     })
-});
