@@ -39,7 +39,7 @@ context('Actions', () => {
             .should('have.attr', 'style', 'color: red;');
     });
 
-    it('.clear() - clears an input or textarea element', () => {
+    it('.clear() - clears test input or textarea element', () => {
         cy.allure().tms('docs', 'https://on.cypress.io/clear');
         cy.get('.action-clear')
             .type('Clear this text')
