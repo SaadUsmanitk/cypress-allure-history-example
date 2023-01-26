@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jan 26 12:47:39 GMT 2023","Thu Jan 26 12:47:40 GMT 2023","1544","","Actions","","","",".focus() - focus on a DOM element",""
+"passed","Thu Jan 26 12:47:42 GMT 2023","Thu Jan 26 12:47:43 GMT 2023","1273","","Actions","","","",".clear() - clears an input or textarea element",""
+"passed","Thu Jan 26 12:47:43 GMT 2023","Thu Jan 26 12:47:44 GMT 2023","622","","Actions","","","","may fail",""
+"passed","Thu Jan 26 12:47:41 GMT 2023","Thu Jan 26 12:47:42 GMT 2023","1297","","Actions","","","",".blur() - blur off a DOM element",""
